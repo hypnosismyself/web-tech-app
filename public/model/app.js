@@ -1,5 +1,6 @@
 // Проверка формы и вывод сообщения
 const form = document.getElementById('contact');
+
 form.addEventListener('submit', async (event) => {
     event.preventDefault(); // Отмена стандартного действия формы
 
@@ -25,16 +26,17 @@ form.addEventListener('submit', async (event) => {
 
             if (result.success) {
                 alert(result.message);
-                form.reset();
             } else {
                 alert("Ошибка: " + result.message);
             }
         } catch (err) {
-            alert("Произошла ошибка при отправке данных.");
+            alert("Произошла ошибка при отправке данных");
             console.error(err);
         }
+
+        event.target.reset();
     } else {
-        alert('Пожалуйста, заполните все поля формы.');
+        alert('Пожалуйста, заполните все поля формы');
     }
 });
 

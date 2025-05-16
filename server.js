@@ -19,7 +19,7 @@ const transporter = nodemailer.createTransport({
     },
 });
 
-transporter.verify((err, success) => {
+transporter.verify((err, ) => {
     if (err) {
         console.error('Ошибка подключения к SMTP:', err);
     } else {
