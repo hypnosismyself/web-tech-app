@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бипки</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">Бипки</div>
+      <nav class="nav">
+        <a href="#about">Описание</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h1>Бипки</h1>
+      <p>Ты ещё не понял, что тебе нужны именно мы!</p>
+      <img class="logo" src="img/logo.jpg" alt="Бипочки">
+    </div>
+  </section>
+
+  <section id="advantages" class="advantages">
+    <div class="container">
+      <h2>Преимущества</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Доступные</h3>
+          <p>Мы везде, и даже там, где вы представить не сможете</p>
+        </div>
+        <div class="card">
+          <h3>Вечные</h3>
+          <p>Вы уйдёте, а мы останемся</p>
+        </div>
+        <div class="card">
+          <h3>Загадочные</h3>
+          <p>Сколько ни смотри, а вы никогда не поймете, что мы такое</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Оставить заявку</h2>
+      <form id="feedback-form">
+        <input type="text" id="name" placeholder="Ваше имя" required/>
+        <input type="email" id="email" placeholder="Ваш Email" required/>
+        <textarea id="message" placeholder="Ваше сообщение" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Контакты:  bipki_co@al.ru</p>
+      <p>Социальные сети:</p>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-to-top">Наверх</button>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
